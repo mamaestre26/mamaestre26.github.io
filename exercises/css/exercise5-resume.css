@@ -1,40 +1,46 @@
-*{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+    
+    
+    
+        *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+             }
 
-}
-
-Body {
-            background-color:#eb8a90;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        Body {
+                background-color:#eb8a90;
+                padding-left: 10px;
+                padding-right: 10px;
+             }
 
 
         h1, address {
-            color: #f3dfbf;
-        background-color: #087e8b;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: -20px;    }
+                color: #f3dfbf;
+            background-color: #087e8b;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: -20px;   
+             }
 
-    address {
-        margin-bottom: 10px;
-    }
-        
-    p {
-      margin-bottom: 20px;
+        address {
+            margin-bottom: 10px;
+            }
             
-        }
+        p {
+        margin-bottom: 20px;
+            }
 
-    hr {
-        border: 2px dashed black;
-        
-    }
+        hr {
+            border: 2px dashed black;
+            }
 
-    main {
-        
-        border: 3px #f3dfbf solid;
-        
-
-    }
-        
+        main {
+            border: 3px #f3dfbf solid;
+             }
+        h2 {
+             color: #f3dfbf;
+            background-color: #087e8b;
+            padding: 1rem;
+            text-align: center;
+            }
+            
