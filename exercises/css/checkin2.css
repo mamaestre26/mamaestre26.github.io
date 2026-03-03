@@ -1,0 +1,77 @@
+img{
+    border: #82DFE2 20px solid;
+    margin-left: 39%;
+    max-width: 100%;
+}
+
+figcaption{
+text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gravitas One';
+    line-height: 2em;
+    color: #55351E;
+}
+
+hr{
+    border: #E3C166 4px dashed;
+    padding: 2px;
+}
+
+
+.intro{ 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2em;
+}
+
+
+body{
+    background-color: #FBF0D0;
+}
+
+h2{
+    font-family: 'Gravitas One';
+    text-align: center;
+    background-color: #F5BFCC;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:#55351E;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2rem;
+}
+
+.top,.genres{
+    margin-left: 10%;
+    background-color: #B6E9BA;
+    margin-right: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1rem;
+    padding-top: .75rem;
+}
+
+A:link{
+    color: black;
+}
+
+a:visited{
+    color: #55351E
+}
+
+a:hover{
+    color:darkgreen
+}
+
+a:active{
+    color: #82DFE2;
+}
