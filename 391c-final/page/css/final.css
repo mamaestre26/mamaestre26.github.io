@@ -184,6 +184,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #EDDDD4;
         padding: 10px;
+        list-style-type: none;
 
     }
 
@@ -630,16 +631,14 @@
 
 
     @media screen and (min-width: 300px) and (max-width: 1050px){
-        #home_page_main, #about_me_main{
-            display: block;
-            align-items: center;
-        }
 
         #bio, #experience{
             text-align: center;
+            padding-left: 8%;
+            padding-right: 8%;
         }
 
-        #home_page_second_half{
+        #home_page_first_half, #about_me_main, #home_page_second_half{
             display: flex;
             flex-direction: column;
             align-items: center;
