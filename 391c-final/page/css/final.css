@@ -168,7 +168,6 @@
         grid-column: 2/3;
         grid-row: 2/3;
         background-color: #197278;
-        font-size: 1rem;
     }
 
     #experience_title{
@@ -185,7 +184,7 @@
         color: #EDDDD4;
         padding: 10px;
         list-style-type: none;
-
+        font-size: 1rem;
     }
 
     #experience_image{
@@ -200,7 +199,6 @@
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 10px;
         font-weight: bold;
-        text-align: right;
         font-size: 2rem;
         text-align: center;
     }
@@ -317,12 +315,12 @@
 
         /*about me PAGE*/
 
-    #about_me_main{
+    #about_me_wrapper{
         display: grid;
         grid-template-rows: repeat(3, auto);
         row-gap: 2rem;
-        grid-template-columns: auto auto;
-        padding: 5rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 10%;
     }
 
     #meet_mariana{
@@ -361,26 +359,29 @@
     #marketing_assistant{
         grid-column: 1/2;
         grid-row: 2/3;
-        text-align: right;
-        padding: 20px;
+        padding: 5%;
+        padding-bottom: 0;
         background-color: #772E25;
         color: #EDDDD4;
+        text-align: center;
     }
 
     #about_me_ma_title{
         font-family: 'gravitas one';
         font-size: 3rem;
-        text-align: center;
         margin-top: 8px;
+        margin-bottom: 60px;
         color: #EDDDD4;
     }
 
     #about_me_ma_summary{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15pt;
-        text-align: right;
-        list-style-type: none;
         font-weight: bold;
+        line-height: 3rem;
+        color: #EDDDD4;
+        padding: 10px;
+        list-style-type: none;
+        font-size: 20pt;
     }
 
     #about_me_img_two{
@@ -404,34 +405,30 @@
     #freelance{
         grid-column: 2/3;
         grid-row: 3/4;
-        padding: 10%;
-        margin-bottom: 0;
+        padding: 5%;
+        padding-bottom: 0;
         background-color: #772E25;
         color: #EDDDD4;
+        text-align: center;
     }
 
     #about_me_freelance_title{
         font-family: 'gravitas one';
         font-size: 3rem;
-        text-align: center;
         margin-top: 8px;
         margin-bottom: 60px;
+        color: #EDDDD4;
     }
 
     #about_me_freelance_summary{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15pt;
-        text-align: left;
         font-weight: bold;
-        align-content: center;
-        line-height: 150%;
-    }
-
-    #about_me_freelance_summary li{
+        line-height: 3rem;
+        color: #EDDDD4;
+        padding: 10px;
         list-style-type: none;
+        font-size: 20pt;
     }
-
-
 
         /* projects */
 
@@ -630,14 +627,17 @@
 
 
     @media screen and (min-width: 300px) and (max-width: 1050px){
-
+        #about_me_header{
+            padding: 0;
+            margin: 0;
+        }
         #bio, #experience{
             text-align: center;
             padding-left: 8%;
             padding-right: 8%;
         }
 
-        #home_page_first_half, #home_page_second_half, #about_me_main{
+        #home_page_first_half, #home_page_second_half, #about_me_wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -653,8 +653,13 @@
         }
         /* about me */
         #about_me_summary{
-            font-size: 2rem;
+            font-size: 2 rem;
         }
+
+        #meet_mariana, #marketing_assistant, #freelance{
+            width: 70%;
+        }
+
         #about_me_ma_summary, #about_me_freelance_summary{
             text-align: center;
         }
@@ -667,6 +672,7 @@
             width:auto;
             height: auto;
             padding-left: 1rem;
+            width: 100%;
         }
 
         #footer_socials, #footer_h3, #footer_important_links, #footer_name, #footer_important_links_content, footer address{
