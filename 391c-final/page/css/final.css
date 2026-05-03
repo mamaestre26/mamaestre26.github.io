@@ -627,17 +627,13 @@
 
 
     @media screen and (min-width: 300px) and (max-width: 1050px){
-        #about_me_header{
-            padding: 0;
-            margin: 0;
-        }
         #bio, #experience{
             text-align: center;
             padding-left: 8%;
             padding-right: 8%;
         }
 
-        #home_page_first_half, #home_page_second_half, #about_me_wrapper{
+        #home_page_first_half, #home_page_second_half, #about_me_wrapper, #projects_wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -681,6 +677,15 @@
             align-items: center;
             font-size: 3rem;
         } 
+
+        /* photography */
+        .prj_title{
+            text-align: left;
+        }
+
+        .prj_des{
+            text-align: right;
+        }
 
     }
     @media (min-width:1100px){
