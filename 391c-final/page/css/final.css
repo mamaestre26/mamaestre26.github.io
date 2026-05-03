@@ -113,8 +113,7 @@
 
 
     /* home page content */
-
-    #home_page_main{
+    #home_page_first_half{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, auto);
@@ -122,7 +121,7 @@
         margin: 5rem;
     }
 
-    #home_page_body{
+    #home_page_body, #about_me_body{
         background-image: url(../assets/art264_web_pattern.jpg);
         background-repeat: repeat;
         background-size: contain;
@@ -247,8 +246,6 @@
         padding: 10px;
     }
 
-
-
     #home_page_projects_title{
         grid-row: 2/3;
         grid-column: 2/3; 
@@ -319,15 +316,11 @@
 
         /*about me PAGE*/
 
-    #about_me_wrapper{
-        background-color: #197278;
-    }
-
-    #about_me{
+    #about_me_main{
         display: grid;
         grid-template-rows: repeat(3, auto);
         row-gap: 2rem;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         padding: 5rem;
     }
 
@@ -335,15 +328,16 @@
         grid-column: 2/3;
         grid-row: 1/2;
         text-align: center;
-        padding: 20px;
-        background-color: #EDDDD4;
+        padding: 5%;
+        background-color: #772E25;
+        color: #EDDDD4;
     }
 
     #about_me_title{
         font-family: 'gravitas one';
         font-size: 3rem;
-        margin-top: 8px;
-        color: #C44536;
+        margin-top: 5%;
+        color: #EDDDD4;
     }
 
     #about_me_summary{
@@ -368,7 +362,8 @@
         grid-row: 2/3;
         text-align: right;
         padding: 20px;
-        background-color: #EDDDD4;
+        background-color: #772E25;
+        color: #EDDDD4;
     }
 
     #about_me_ma_title{
@@ -376,7 +371,7 @@
         font-size: 3rem;
         text-align: center;
         margin-top: 8px;
-        color: #C44536;
+        color: #EDDDD4;
     }
 
     #about_me_ma_summary{
@@ -410,7 +405,8 @@
         grid-row: 3/4;
         padding: 20px;
         margin-bottom: 0;
-        background-color: #EDDDD4;
+        background-color: #772E25;
+        color: #EDDDD4;
     }
 
     #about_me_freelance_title{
@@ -419,7 +415,6 @@
         text-align: center;
         margin-top: 8px;
         margin-bottom: 60px;
-        color: #C44536;
     }
 
     #about_me_freelance_summary{
@@ -629,8 +624,13 @@
     }
 
 
-    @media screen and (min-width: 300px){
-        #home_page_main{
+
+
+
+
+
+    @media screen and (min-width: 300px) and (max-width: 1050px){
+        #home_page_main, #about_me_main{
             display: block;
             align-items: center;
         }
@@ -645,17 +645,40 @@
             align-items: center;
         }
 
+        .home_page_sections{
+            width:70%;
+            height: fit-content;
+        }
 
+        #home_page_about_me_summary{
+            font-size: 2rem;
+        }
+        /* about me */
+        #about_me_summary{
+            font-size: 2rem;
+        }
+        #about_me_ma_summary, #about_me_freelance_summary{
+            text-align: center;
+        }
         footer{
-            display: block;
+            display: flex;
+            flex-direction: column;
             margin: 0;
+            text-align: center;
             align-content: center;
             width:auto;
             height: auto;
             padding-left: 1rem;
         }
+
+        #footer_h3, #footer_important_links, #footer_name, #footer_important_links_content, footer address{
+            text-align: center;
+            justify-items: center;
+            align-items: center;
+        } 
+
     }
-    @media (min-width:1000px){
+    @media (min-width:1100px){
         #home_page_main{
         grid-template-rows:max-content;
         height:100%;
