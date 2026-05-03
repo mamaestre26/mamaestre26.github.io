@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Mariana Maestre</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,13 +12,49 @@
     <body>
         <div id="about_me_wrapper">
             <header>
-                <h1>Mariana Maestre</h1>
+                <a href="./home_page.html">
+                    <img id="name_logo" src="./assets/name logo.png">
+                </a>
                 <nav>
                      <ul>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html"> Home</a></li>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> About Me</a></li>
-                        <li> <a href="#"> Projects</a></li>
-                        <li> <a href="#"> Contact</a></li>
+                        <div class="nav_button"> 
+                             <li> 
+                                <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html">
+                                Home
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> 
+                                    About Me
+                                </a>
+                            </li>
+                        </div>
+
+                        <li> 
+                            <div class="dropdown">
+
+                                <button class="dropbtn">Projects</button>
+
+                                <div class="dropdown-content">
+                                    <a href="./photography.html">Photography</a>
+                                    <a href="./video.html">Video</a>
+                                    <a href="./digital_design.html">Digital Design</a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="#"> 
+                                    Contact
+                                </a>
+                            </li>
+                        </div>
+
                     </ul>
                 </nav>
             </header>

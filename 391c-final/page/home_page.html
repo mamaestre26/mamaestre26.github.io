@@ -9,69 +9,190 @@
         <link href="./css/final.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="home_page_body">
         <div id="wrapper">
             <header>
-                <h1>Mariana Maestre</h1>
+                <a href="./home_page.html">
+                    <img id="name_logo" src="./assets/name logo.png">
+                </a>
                 <nav>
                      <ul>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html"> Home</a></li>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> About Me</a></li>
-                        <li> <a href="#"> Projects</a></li>
-                        <li> <a href="#"> Contact</a></li>
-                    </ul>
+                        <div class="nav_button"> 
+                             <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html">
+                                 Home</a> </li>
+                        </div>
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> 
+                                    About Me
+                                </a>
+                            </li>
+                        </div>
+
+                        <li> 
+                            <div class="dropdown">
+
+                            <button class="dropbtn">Projects</button>
+
+                                <div class="dropdown-content">
+                                    <a href="./photography.html">Photography</a>
+                                    <a href="./video.html">Video</a>
+                                    <a href="./digital_design.html">Digital Design</a>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="#"> 
+                                    Contact
+                                </a>
+                            </li>
+                        </div>
                 </nav>
             </header>
+
+            
             <main id="home_page_main">
         <!--bio-->
-        <div id="bio">
-            <h2 id="bio_name">
-                    Mariana Maestre
-            </h2>
-            <h2 id="bio_content">
-                Creative Marketing
-            </h2>
-        </div>
+            <div id="bio">
+                <h2 id="bio_name">
+                        Mariana Maestre
+                </h2>
+
+                <h2 id="bio_content">
+                    Creative Marketing
+                </h2>
+            </div>
        
         <!--image-->
                 <img id="bio_image" src="../images/home_page_1.JPG" alt="Mariana's headshot.">
        
         <!--experience-->   
-        <div id="experience">
-            <h2 id="experience_title">
-                    Experienced in...
-            </h2>
-            <ul id="experienced_list">
-                    <li class="experience_list_item">Adobe Lightroom</li>
-                    <li class="experience_list_item">Adobe Photoshop</li>
-                    <li class="experience_list_item">Adobe InDesign</li>
-                    <li class="experience_list_item">Adobe Illustrator</li>
-                    <li class="experience_list_item">Adobe Premiere Pro</li>
-            </ul>
-        </div>
-        <img id="experience_image" src="../images/home_page_2.jpg" alt="Mariana wearing a white shirt and a black vest.">
+        
+                <div id="experience">
+                    <h2 id="experience_title">
+                            Experienced in...
+                    </h2>
+                    <ul id="experienced_list">
+                            <li class="experience_list_item">Adobe Lightroom</li>
+                            <li class="experience_list_item">Adobe Photoshop</li>
+                            <li class="experience_list_item">Adobe InDesign</li>
+                            <li class="experience_list_item">Adobe Illustrator</li>
+                            <li class="experience_list_item">Adobe Premiere Pro</li>
+                    </ul>
+                </div>
 
+            <img id="experience_image" src="../images/home_page_2.jpg" alt="Mariana wearing a white shirt and a black vest.">
+     </div>
         <!--about me-->
-            <div id="home_page_about_me">
-            <h2 id="home_page_about_me_title">
-                About me
+            <div id="home_page_second_half">
+                
+                <div id="home_page_about_me">
+                   
+                    <h2 id="home_page_about_me_title">
+                        About me
+                   
+                    </h2>
+                    
+                    <p id="home_page_about_me_summary"> I am an undergraduate student at University of Massachusetts, Amherst, pursuing a Bachelor of Arts in Creative Marketing and a Certificate in Design and Creative Technologies. I am interested in brand strategies that incorporate creative elements such as digital media and design.</p>
+                
+                </div>
+        
+
+        <!--sections-->
+            <h2 id="home_page_projects_title">
+                Projects
             </h2>
 
-            <p id="home_page_about_me_summary"> I am an undergraduate student at University of Massachusetts, Amherst, pursuing a Bachelor of Arts in Creative Marketing and a Certificate in Design and Creative Technologies. I am interested in brand strategies that incorporate creative elements such as digital media and design.</p>
-        </div>
-        <img id="home_page_about_me_image" src="../images/home_page_3.jpg" alt="Mariana smiling holding a camera.">
-            </main>
+                <div id="home_page_photography" class="home_page_sections">
+                <a href="./photography.html">              
+                            <h2 class="home_page_section_title">Photography</h2>
+                            <img id= "home_page_photography_content" src="../images/home_page_photography.jpg">
+                </a>
+                </div>
+
+
+                <div id="home_page_video" class="home_page_sections">
+                <a href="./video.html">  
+                    
+                        <h2 class="home_page_section_title">Video</h2>
+                            <img id= "home_page_video_content" src="../images/home_page_video.jpg">
+                </a>
+                </div>
+
+                 <div id="home_page_design" class="home_page_sections">
+                <a href="./digital_design.html">
+               
+                    <h2 class="home_page_section_title">Digital Design</h2>
+                        <img id= "home_page_design_content" src="../images/home_page_digital.jpg">
+                </a>
+                </div>  
+
+            <div id="home_page_resume">
+                <a href="https://www.dropbox.com/scl/fi/8pa4hh8wj1ybl0gl209br/Mariana-Maestre-Digital-Marketing-Resume-2025.pdf?rlkey=qzmx578tjeo7jntyernxyzo5d&dl=0" id="resume_link">
+                    Resume</a>
+            </div>
+
+            </div>
+        </main>
+    </body>    
+
             
             <footer>
+
+                <h2 id="footer_name">
+                    Mariana Maestre
+                </h2>
+
+                <h3 id="footer_h3">
+                    Creative Marketing
+                </h3>
+
+                <h2 id="footer_important_links">
+                    Important Links
+                </h2>
+
+                <ul id="footer_important_links_content">
+                    <li> 
+                        <a href="./home_page.html">
+                        Home
+                        </a> 
+                    </li>
+                    <li> 
+                        <a href="./about_me.html"> 
+                        About Me
+                        </a>
+                    </li>
+                        <li>
+                            <a href="./photography.html">Photography</a>
+                        </li>
+                        <li>
+                            <a href="./video.html">Video</a>
+                        </li>
+                        <li>
+                            <a href="./digital_design.html">Digital Design</a>
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                    Contact
+                            </a>
+                        </li>
+                </ul>
+
+                <h2 id="footer_socials">
+                    Contacts
+                </h2>
+
                 <address>
                     <ul>
-                            <li> mmaestre@umass.edu</li>
-                            <li> <a href="https://www.instagram.com/marianas_portfolio_v1/"> Instagram</a></li>
-                            <li> <a href="https://www.linkedin.com/in/mariana-maestre-aa1572285/"> LinkedIn</a></li>
-                            <li> <a href="file:///C:/Users/marim/Dropbox/Resumes/Mariana%20Maestre%20Digital%20Marketing%20Resume%202025.pdf"><button>Resume</button></a></li>
-                        </ul>
+                        <li> mmaestre@umass.edu</li>
+                        <li> <a href="https://www.instagram.com/marianas_portfolio_v1/"> Instagram</a></li>
+                        <li> <a href="https://www.linkedin.com/in/mariana-maestre-aa1572285/"> LinkedIn</a></li>
+                        <li> <a href="https://www.dropbox.com/scl/fi/8pa4hh8wj1ybl0gl209br/Mariana-Maestre-Digital-Marketing-Resume-2025.pdf?rlkey=qzmx578tjeo7jntyernxyzo5d&dl=0"> Resume </a>
+                    </ul>
                 </address>
             </footer>
-        </div>
-    </body>
 </html>

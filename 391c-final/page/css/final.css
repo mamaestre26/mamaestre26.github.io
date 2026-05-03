@@ -1,20 +1,23 @@
-    #wrapper{
-        min-height: 100vh;
-        background-color: #EDDDD4; 
-    }
-
-    header{
-        background-color: #EDDDD4; 
+ header{ 
         font-family: 'gravitas one';
         text-align: center;
         padding: 2rem;
         padding-top: 10px;   
         padding-bottom: 0;
     }
+    #name_logo{
+        width: 300px;
+        height: auto;
+        background-color: #EDDDD4;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        filter: drop-shadow(8px 8px 10px black);
+    }
 
     h1{
         font-size: 3rem;
         margin-bottom: 0;
+        font-family: 'gravitas one';
     }   
 
     body{
@@ -22,25 +25,30 @@
     }
 
     h2{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'gravitas one';
         color: #EDDDD4;
         font-size: x-large;
     }
 
-    nav{
+    .nav_button{
         background-color: #EDDDD4;
+        filter: drop-shadow(8px 8px 10px black);
+        color: #C44536;
+        border-radius: 50px;
+        align-content: center;
+    }
+
+    nav{
         display: flex;
-        font-size: 2rem;
-        font-family: 'gravitas one';    
+        font-size: 2rem;    
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 0rem;
     }
 
     nav li{
         list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'gravitas one';
     }
 
     nav a{
@@ -55,8 +63,56 @@
         padding: 25px;
         margin: 1rem;
         flex-wrap: wrap;
+        gap: 2rem;
     }
 
+        /* drop down */
+    .dropbtn {
+        background-color: #EDDDD4;
+        filter: drop-shadow(8px 8px 10px black);
+        color: #C44536;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        border-radius: 50px;
+        padding: 1rem;
+        font-family: 'gravitas one';
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+    .dropdown-content a{
+        color: #C44536;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .dropdown-content a:hover{
+        background-color: #772E25;
+    }
+
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+
+    /* home page content */
 
     #home_page_main{
         display: grid;
@@ -65,35 +121,36 @@
         row-gap: 2rem;
         margin: 5rem;
     }
+
+    #home_page_body{
+        background-image: url(../assets/art264_web_pattern.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+    }
+
+
+    
     #bio{
         background-color: #C44536;
-        display: flex;
-        flex-direction: column;
         font-size: 1rem;
         justify-content: space-between;
         text-align: right;
+        grid-row:1/2;
+        grid-column: 1/2;
     }
 
     #bio_name{
         font-family: 'gravitas one';
         font-size: 3rem;
-        grid-column: 1/2;
-        grid-row:1/2;
         color: #EDDDD4;
         margin: 5px;
         padding-right: 10px;
         padding-top: 2px;
-        padding-bottom: 75px;
-        position: sticky;
-        top: 2.5px;
-        background-color: #197278   ;
     }
 
     #bio_content{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 3rem;
-        grid-column: 1/2;
-        grid-row:1/2;
         color: #EDDDD4;
         padding: 10px;
         margin: 0;
@@ -107,39 +164,27 @@
         height: 100%
     }
 
+
     #experience{
         grid-column: 2/3;
         grid-row: 2/3;
         background-color: #197278;
-        display: flex;
-        flex-direction: column;
         font-size: 1rem;
-        justify-content: space-between;
-
     }
 
     #experience_title{
         font-family: 'gravitas one';
         font-size: 3rem;
-        grid-column: 1/2;
-        grid-row:1/2;
         color: #EDDDD4;
         margin: 5px;
-        padding-right: 10px;
+        padding-left: 10px;
         padding-top: 2px;
-        padding-bottom: 75px;
-        position: sticky;
-        top: 2.5px;
     }
 
     #experienced_list{
         font-family: Arial, Helvetica, sans-serif;
         color: #EDDDD4;
-        grid-column: 1/2;
         padding: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-        grid-row: 2/3;
 
     }
 
@@ -160,15 +205,31 @@
         text-align: center;
     }
 
+    
+
+        /* sections */
+    #home_page_second_half{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        row-gap: 2rem;
+        column-gap:2rem;
+        align-content: center;
+        text-align: center;
+        margin: 8%;
+        margin-top: 2%;
+    }
+
     #home_page_about_me{
-        grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 1/2;
+        grid-column: 1/4 ;
         background-color: #C44536;
-        display: flex;
-        flex-direction: column;
         font-size: 1rem;
-        text-align: right;
-        
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem;        
+        border-radius: 20px;
     }
     
     #home_page_about_me_title{
@@ -176,9 +237,6 @@
         font-size: 3rem;
         color: #EDDDD4;
         margin: 5px;
-        padding-right: 10px;
-        padding-top: 2px;
-        position: sticky;
         top: 2.5px;
     }
 
@@ -187,28 +245,90 @@
         font-size: 1.5rem;
         color: #EDDDD4;
         padding: 10px;
-        align-self: center; 
-        margin: 0;
+    }
+
+
+
+    #home_page_projects_title{
+        grid-row: 2/3;
+        grid-column: 2/3; 
+        border-radius: 20px;
+        background-color: #197278;
+        padding: 1rem;
+    }
+
+    #home_page_photography{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color:#197278;
+        border-radius: 20px;
+        padding: 1rem;
+        filter: drop-shadow(8px 8px 10px black);
+    }
+
+    #home_page_video{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-color:#197278;
+        border-radius: 20px;
+        padding: 1rem;
+        filter: drop-shadow(8px 8px 10px black);
+    }
+
+    #home_page_design{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-color:#197278;
+        border-radius: 20px;
+        padding: 1rem;
+        filter: drop-shadow(8px 8px 10px black);
+    }
+
+        /* section align & size */
+
+    #home_page_photography_content, #home_page_video_content, #home_page_design_content{
+        height: 400px;
+        width: auto;
+    }
+
+
+        /*home page resume */
+    #home_page_resume{
+        grid-row: 4/5;
+        grid-column: 2/3;
+        border-radius: 20px;
+        background-color: #C44536;
+        padding: 1rem;
+        filter: drop-shadow(8px 8px 10px black);
         text-align: center;
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-family: 'gravitas one';
+        color: #EDDDD4;
+        font-size: x-large;
     }
 
-    #home_page_about_me_image{
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+    #home_page_resume :active{
+        text-decoration: none;
     }
 
-    /*about me*/
+    a:link, a:visited, a:hover, a:active{
+        text-decoration: none;
+        color: black;
+    }
+
+    
+
+        /*about me PAGE*/
+
+    #about_me_wrapper{
+        background-color: #197278;
+    }
+
     #about_me{
         display: grid;
         grid-template-rows: repeat(3, auto);
+        row-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         padding: 5rem;
-        
     }
 
     #meet_mariana{
@@ -216,13 +336,14 @@
         grid-row: 1/2;
         text-align: center;
         padding: 20px;
+        background-color: #EDDDD4;
     }
 
     #about_me_title{
         font-family: 'gravitas one';
         font-size: 3rem;
         margin-top: 8px;
-        color: #EDDDD4;
+        color: #C44536;
     }
 
     #about_me_summary{
@@ -240,13 +361,14 @@
     }
 
 
-    /*Marketing*/
+        /* about me marketing*/
 
     #marketing_assistant{
         grid-column: 1/2;
         grid-row: 2/3;
         text-align: right;
         padding: 20px;
+        background-color: #EDDDD4;
     }
 
     #about_me_ma_title{
@@ -254,6 +376,7 @@
         font-size: 3rem;
         text-align: center;
         margin-top: 8px;
+        color: #C44536;
     }
 
     #about_me_ma_summary{
@@ -272,7 +395,7 @@
         height: 100%;
     }
 
-    /*freelance*/
+        /*freelance*/
 
     #about_me_img_three{
         grid-row: 3/4;
@@ -287,6 +410,7 @@
         grid-row: 3/4;
         padding: 20px;
         margin-bottom: 0;
+        background-color: #EDDDD4;
     }
 
     #about_me_freelance_title{
@@ -295,6 +419,7 @@
         text-align: center;
         margin-top: 8px;
         margin-bottom: 60px;
+        color: #C44536;
     }
 
     #about_me_freelance_summary{
@@ -312,17 +437,23 @@
 
 
 
-    /* projects */
+        /* projects */
+
+    #projects_wrapper{
+        background-color: #EDDDD4;
+    }
+
+
     #projects_main{
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: repeat(2,auto);
         column-gap: 2rem;
         row-gap: 2rem;
         margin: 4rem;
     }
 
-    /* project_1 */
+        /* photography */
 
     #projects_main h1{
         grid-row: 1/2;
@@ -332,8 +463,11 @@
         padding-bottom: 1rem;
     }
 
-    #projects_main figcaption{
-        text-align: center;
+    figcaption{
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+        display: flex;
+        justify-content: space-between;
     }
 
 
@@ -345,28 +479,186 @@
 
     #vintage_bash{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
 
     #feast{
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 2/4;
     }
 
-    #umg_vid1{
+    #prof_bmw{
         grid-column: 1/2;
-        grid-row: 3/4;
+        grid-row: 4/6;
     }
+
+    #hc_horz{
+        grid-column: 2/3;
+        row-gap: 5px;
+    }
+
+    #hc_sprit{
+        grid-row: 4/5;
+    }
+
+    #hc_band{
+        grid-row: 5/6;
+    }
+
+    #loco{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    #car_detail{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    #miata_horz{
+        grid-column: 1/2;
+        row-gap: 5px;
+    }
+
+    #miata_far{
+        grid-row: 7/8;
+    }
+
+    #miata_close{
+        grid-row: 8/9;
+    }
+
+    #album{
+        grid-column: 2/3;
+        grid-row: 7/9;
+    }
+
+
+
+    /* Digital design */
+    #projects_main a{
+        filter: drop-shadow(8px 8px 10px black);
+    }
+
+    #projects_main figcaption{
+        padding-top: 1rem;
+    }
+
+    #brand_guide{
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
     footer{
-        background-color: #EDDDD4;
-        text-align: center;
-        width: 100%;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        text-align: left;
+        color: #EDDDD4;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto;
+        column-gap: auto;
+        width: 100%;
+        grid-template-rows: auto auto;
+        background-color: #197278;
     }
 
-    footer li{
+    #footer_name{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #footer_h3{
+        font-family: 'gravitas one';
+        color: black;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+        justify-self: baseline;
+    }
+
+    #footer_important_links{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    #footer_important_links_content{
+        font-weight: bold;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: left;
         list-style-type: none;
-
+        margin-left: 0;
     }
 
+    #footer_socials{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    footer address{
+        font-weight: bold;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        text-align: left;
+    }
+
+    footer h2{
+        padding-bottom: 0.5rem;   
+    }
+
+    footer :visited{
+        text-decoration: none;
+        color: black;
+    }
+
+    footer a{
+        text-decoration: none;
+        margin-left: 0;
+    }
+
+
+    footer ul{
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+    }
+
+
+    @media screen and (min-width: 300px){
+        #home_page_main{
+            display: block;
+            align-items: center;
+        }
+
+        #bio, #experience{
+            text-align: center;
+        }
+
+        #home_page_second_half{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        footer{
+            display: block;
+            margin: 0;
+            align-content: center;
+            width:auto;
+            height: auto;
+            padding-left: 1rem;
+        }
+    }
+    @media (min-width:1000px){
+        #home_page_main{
+        grid-template-rows:max-content;
+        height:100%;
+        width: auto;
+        }
+    }

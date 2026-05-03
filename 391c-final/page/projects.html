@@ -11,13 +11,42 @@
     <body>
         <div id="projects_wrapper">
             <header>
-                <h1>Mariana Maestre</h1>
+                <img id="name_logo" src="./assets/name logo.png">
                 <nav>
                      <ul>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html"> Home</a></li>
-                        <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> About Me</a></li>
-                        <li> <a href="#"> Projects</a></li>
-                        <li> <a href="#"> Contact</a></li>
+
+                        <div class="nav_button"> 
+                             <li> <a href="file:///C:/Users/marim/Documents/391c-final/page/home_page.html">
+                                 Home</a> </li>
+                        </div>
+
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="file:///C:/Users/marim/Documents/391c-final/page/about_me.html"> 
+                                    About Me
+                                </a>
+                            </li>
+                        </div>
+
+                        <li> <div class="dropdown">
+                                <button class="dropbtn">Projects</button>
+                                <div class="dropdown-content">
+                                    <a href="./photography.html">Photography</a>
+                                    <a href="#">Video</a>
+                                    <a href="#">Digital Design</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="nav_button">
+                            <li> 
+                                <a href="#"> 
+                                    Contact
+                                </a>
+                            </li>
+                        </div>
+
                     </ul>
                 </nav>
             </header>
@@ -29,7 +58,8 @@
                     <a href="#">
                         <figure>
                             <img src="../images/vintage_bash_cover.jpg" alt="#" class=project_img>
-                            <figcaption> Vintage Bash / Photography / Event</figcaption>
+                            <figcaption class="profolio_project_title">Vintage Bash</p>
+                            <figcaption> Photography / Promotional Photoshoot</figcaption>
                         </figure>
                 </div>
 
@@ -38,15 +68,18 @@
                     <a href="#">
                         <figure>
                             <img src="../images/feast_cover.jpg" alt="#" class=project_img>
+                            <figcaption class="profolio_project_title">Feast</p>
+                            <figcaption> Photography / Promotional Photoshoot</figcaption>
                             <figcaption> Feast / Photography / Promotional Photoshoot</figcaption>
                         </figure>
                     </a>
                     
-                <div id="umg_vid1">
+                <div id="UMG">
                     <a href="#">
                         <figure>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kqYDY0oPVfU?si=j1nOgS2Cc0RL9lOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <figcaption> Feast / Photography / Promotional Photoshoot</figcaption>
+                            <img src="../images/feast_cover.jpg" alt="#" class=project_img>
+                            <figcaption class="profolio_project_title">Feast</p>
+                            <figcaption> Photography / Promotional Photoshoot</figcaption>
                         </figure>
                     </a>    
                 </div>
