@@ -1,4 +1,4 @@
- header{ 
+    header{ 
         background-color: #EDDDD4;
         font-family: 'gravitas one';
         text-align: center;
@@ -6,6 +6,11 @@
         padding-top: 10px;   
         padding-bottom: 0;
     }
+
+    header h1{
+        color: #772E25;
+    }
+
     #name_logo{
         width: 300px;
         height: auto;
@@ -165,6 +170,7 @@
         text-align: right;
         padding-right: 1rem;
         font-size: 10pt;
+        color: #EDDDD4;
     }
 
     #bio_content{
@@ -208,6 +214,7 @@
         text-align: left;
         padding-left: 1rem;
         font-size: 10pt;
+        color: #EDDDD4;
     }
 
     #experience_list{
