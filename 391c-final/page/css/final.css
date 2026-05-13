@@ -858,8 +858,9 @@
         
     }
 
-    #design_main a{
+    #design_main a:hover{
         filter: drop-shadow(8px 8px 10px black);
+        transition: 2s ease;
     }
 
     #design_main figcaption{
@@ -1039,9 +1040,11 @@
         color: #EDDDD4;
     }
 
+
+
     .contact_button:visited{
         color: #EDDDD4;
-        text-decoration: line-through;
+        text-decoration: none;
     }
 
     .contact_button:hover{
@@ -1136,6 +1139,10 @@
         color: #EDDDD4;
     }
 
+    footer a:hover{
+        color: black;
+    }
+
     footer ul{
         padding-left: 0;
         margin-left: 0;
@@ -1175,6 +1182,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        #bio h3, #experience h3, #meet_mariana h3, #marketing_assistant h3{
+            font-size: 17pt;
         }
 
         #bio, #bio_image, #experience, #experience_image, #meet_mariana, #about_me_img_one, #marketing_assistant, #about_me_img_two, #about_me_img_three, #freelance   {
