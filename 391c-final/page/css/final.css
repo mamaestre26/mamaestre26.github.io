@@ -1,4 +1,5 @@
  header{ 
+        background-color: #EDDDD4;
         font-family: 'gravitas one';
         text-align: center;
         padding: 2rem;
@@ -8,10 +9,12 @@
     #name_logo{
         width: 300px;
         height: auto;
-        background-color: #EDDDD4;
-        padding: 1rem 3rem;
-        border-radius: 50px;
+        padding: 2rem 3rem;
+    }
+
+    #name_logo:hover{
         filter: drop-shadow(8px 8px 10px black);
+        transition: 2s ease;
     }
 
     h1{
@@ -31,11 +34,17 @@
     }
 
     .nav_button{
-        background-color: #EDDDD4;
-        filter: drop-shadow(8px 8px 10px black);
-        color: #C44536;
+        border: #772E25 solid 2px;
         border-radius: 50px;
         align-content: center;
+        background-color: #EDDDD4;
+    }
+
+    .nav_button:hover{
+        color: #772E25;
+        filter: drop-shadow(8px 8px 10px black);
+        transition: all 1s ease;
+        
     }
 
     nav{
@@ -69,10 +78,8 @@
         /* drop down */
     .dropbtn {
         background-color: #EDDDD4;
-        filter: drop-shadow(8px 8px 10px black);
-        color: #C44536;
+        color: black;
         font-size: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
         border: none;
         border-radius: 50px;
         padding: 1rem;
@@ -82,6 +89,13 @@
     .dropdown{
         position: relative;
         display: inline-block;
+        border: #772E25 solid 2px;
+        border-radius: 50px;
+    }
+
+  .dropdown :hover{
+        filter: drop-shadow(8px 8px 10px black);
+        transition: .5s ease;
     }
 
     .dropdown-content{
@@ -122,11 +136,12 @@
     }
 
     #home_page_body, #about_me_body{
-        background-image: url(../assets/art264_web_pattern.jpg);
+        background-image: url(../assets/logo.svg);
         background-repeat: repeat;
-        background-size: contain;
+        background-size: 25%;
     }
     
+
     #bio{
         background-color: #C44536;
         grid-row:1/2;
@@ -135,6 +150,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-content: center;
+        border-radius: 20px 0 0 20px;
     }
 
     #bio_name{
@@ -143,6 +159,12 @@
         text-align: right;
         color: #EDDDD4;
         text-align: center;
+    }
+
+    #bio h3 {
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 10pt;
     }
 
     #bio_content{
@@ -157,7 +179,8 @@
         grid-row: 1/2;
         object-fit: cover;
         width: 100%;
-        height: 100%
+        height: 100%;
+        border-radius: 0 20px 20px 0;
     }
 
 
@@ -165,6 +188,11 @@
         grid-column: 2/3;
         grid-row: 2/3;
         background-color: #197278;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        border-radius: 0 20px 20px 0;
     }
 
     #experience_title{
@@ -176,12 +204,28 @@
         padding-top: 2px;
     }
 
-    #experienced_list{
+    #experience h3 {
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 10pt;
+    }
+
+    #experience_list{
         font-family: Arial, Helvetica, sans-serif;
         color: #EDDDD4;
         padding: 10px;
-        list-style-type: none;
         font-size: 1rem;
+    }
+
+    .experience_list_item{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 3rem;
+        text-align: left;
+        list-style-type: disc;
+        list-style-position: inside;
     }
 
     #experience_image{
@@ -190,23 +234,18 @@
         height: 100%;
         grid-column: 1/2;
         grid-row: 2/3;
+        border-radius: 20px 0 0 20px;
     }
 
-    .experience_list_item{
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-        font-weight: bold;
-        font-size: 2rem;
-        text-align: center;
-    }
 
     
 
         /* sections */
+  
     #home_page_second_half{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto 1fr auto;
+        grid-template-rows: .5fr auto 1fr auto;
         row-gap: 2rem;
         column-gap:2rem;
         align-content: center;
@@ -217,14 +256,41 @@
 
     #home_page_about_me{
         grid-row: 1/2;
-        grid-column: 1/4 ;
-        background-color: #C44536;
-        font-size: 1rem;
-        text-align: center;
-        justify-items: center;
-        align-items: center;
-        padding: 1rem;        
+        grid-column: 1/4;
+        background-color: #772E25;
         border-radius: 20px;
+    }
+
+    #home_page_about_me_title{
+        font-family: 'gravitas one';
+        font-size: 3rem;
+        text-align: center;
+        color: #EDDDD4;
+        margin: 5px;
+        padding-top: 2px; 
+    }
+
+    #home_page_about_me_summary{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #EDDDD4;
+        font-size: 2rem;
+    }
+
+    .about_me_items{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    #home_page_about_me:hover{
+        filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
+    }
+    
+    #home_page_about_me a{
+        text-decoration: none;
     }
     
     #home_page_about_me_title{
@@ -237,9 +303,8 @@
 
     #home_page_about_me_summary{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
+        font-size: 18pt;
         color: #EDDDD4;
-        padding: 10px;
     }
 
     #home_page_projects_title{
@@ -256,7 +321,11 @@
         background-color:#197278;
         border-radius: 20px;
         padding: 1rem;
+    }
+
+    #home_page_photography:hover{
         filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
     }
 
     #home_page_video{
@@ -265,7 +334,16 @@
         background-color:#197278;
         border-radius: 20px;
         padding: 1rem;
+    }
+
+    #home_page_video h3{
+        font-size: 10pt;
+    }
+
+
+    #home_page_video:hover{
         filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
     }
 
     #home_page_design{
@@ -274,7 +352,15 @@
         background-color:#197278;
         border-radius: 20px;
         padding: 1rem;
+    }
+
+    #home_page_design:hover{
         filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
+    }
+
+     .home_page_sections a:link, .home_page_sections a:active, .home_page_sections a:visited{
+        text-decoration: none;
     }
 
         /* section align & size */
@@ -292,29 +378,28 @@
         border-radius: 20px;
         background-color: #C44536;
         padding: 1rem;
-        filter: drop-shadow(8px 8px 10px black);
         text-align: center;
         font-family: 'gravitas one';
         color: #EDDDD4;
         font-size: x-large;
     }
 
-    #home_page_resume :active{
-        text-decoration: none;
+    #home_page_resume:hover{
+        filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
     }
 
-    a:link, a:visited, a:hover, a:active{
+    #home_page_resume a:active, #home_page_resume a:link, #home_page_resume a:visited, #home_page_resume a:hover,  #home_page_resumea a:active{
         text-decoration: none;
-        color: black;
+        color: #EDDDD4;
     }
-
     
 
         /*about me PAGE*/
 
     #about_me_wrapper{
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         row-gap: 2rem;
         grid-template-columns: 1fr 1fr;
         padding: 10%;
@@ -323,24 +408,40 @@
     #meet_mariana{
         grid-column: 2/3;
         grid-row: 1/2;
-        text-align: center;
-        padding: 5%;
         background-color: #772E25;
-        color: #EDDDD4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        border-radius: 0 20px 20px 0;
+        padding-right: 2rem;
     }
 
     #about_me_title{
         font-family: 'gravitas one';
         font-size: 3rem;
-        margin-top: 5%;
         color: #EDDDD4;
+        margin: 5px;
+        padding-left: 10px;
+        padding-top: 2px;
+        text-align: center;
     }
 
     #about_me_summary{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 20pt;
-        text-align:center;
+        color: #EDDDD4;
+        padding: 10px;
+        font-size: 19pt;
+        text-align: center;
     }
+
+    #meet_mariana h3{
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 10pt;
+        color: #EDDDD4;
+    }
+
 
     #about_me_img_one{
         grid-row: 1/2;
@@ -348,6 +449,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+        border-radius: 20px 0 0 20px;
     }
 
 
@@ -356,15 +458,19 @@
     #marketing_assistant{
         grid-column: 1/2;
         grid-row: 2/3;
-        padding: 5%;
-        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
         background-color: #772E25;
         color: #EDDDD4;
-        text-align: center;
+        border-radius: 20px 0 0 20px;
+        
     }
 
     #about_me_ma_title{
         font-family: 'gravitas one';
+        text-align: center;
         font-size: 3rem;
         margin-top: 8px;
         margin-bottom: 60px;
@@ -372,13 +478,29 @@
     }
 
     #about_me_ma_summary{
+
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        line-height: 3rem;
         color: #EDDDD4;
         padding: 10px;
         list-style-type: none;
-        font-size: 20pt;
+        font-size: 1rem;
+    }
+
+    .about_me_ma_items{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 4rem;
+        text-align: left; 
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    #marketing_assistant h3 {
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 10pt;
     }
 
     #about_me_img_two{
@@ -387,6 +509,7 @@
         object-fit:cover;
         width: 100%;
         height: 100%;
+        border-radius: 0 20px 20px 0;
     }
 
         /*freelance*/
@@ -396,21 +519,25 @@
         grid-column: 1/2;
         object-fit: cover;
         height: 100%;
-        width: 100%;   
+        width: 100%;
+        border-radius: 20px 0 0 20px;   
     }
 
     #freelance{
         grid-column: 2/3;
         grid-row: 3/4;
-        padding: 5%;
-        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
         background-color: #772E25;
         color: #EDDDD4;
-        text-align: center;
+        border-radius: 0 20px 20px 0px;
     }
 
     #about_me_freelance_title{
         font-family: 'gravitas one';
+        text-align: center;
         font-size: 3rem;
         margin-top: 8px;
         margin-bottom: 60px;
@@ -419,14 +546,49 @@
 
     #about_me_freelance_summary{
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
         line-height: 3rem;
         color: #EDDDD4;
         padding: 10px;
-        list-style-type: none;
-        font-size: 20pt;
+        list-style-position:inside;
+        font-size: 18pt;
+        grid-column: 2/3;
     }
 
+    .about_me_freelance_items{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 3rem;
+        text-align: left; 
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    #about_me_resume{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        border-radius: 20px;
+        background-color: #772E25;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'gravitas one';
+        color: #EDDDD4;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    #about_me_resume:hover{
+        filter: drop-shadow(8px 8px 10px black);
+        transition:all 1s ease;
+    }
+
+    #about_me_resume:visited, #about_me_resume a{
+        color:#EDDDD4;
+        text-decoration: none;
+    }
+
+    
         /* projects */
 
     #projects_wrapper{
@@ -434,18 +596,17 @@
     }
 
 
-    #projects_main{
+    #photography_main{
         display: grid;
-        grid-template-rows: repeat(10, auto);
+        grid-template-rows: repeat(20, auto);
         grid-template-columns: repeat(2,auto);
         column-gap: 2rem;
-        row-gap: 2rem;
         margin: 4rem;
     }
 
         /* photography */
 
-    #projects_main h1{
+    #photography_main h1{
         grid-row: 1/2;
         grid-column: 1/4;
         text-align: center;
@@ -454,10 +615,18 @@
     }
 
     figcaption{
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-        Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: space-between;
+    }
+
+    .prj_title{
+        font-size: 15pt;
+        font-weight: bold;
+    }
+
+    .prj_des{
+        font-size: 12pt;
     }
 
 
@@ -523,15 +692,166 @@
         grid-row: 7/9;
     }
 
+    #car_meet{
+        grid-column: 1/2;
+        grid-row: 8/11;
+    }
+
+    #red_e30{
+        grid-column: 2/3;
+        grid-row: 9/11;
+    }
+
+    #wrestling{
+        grid-column: 1/2;
+        grid-row: 11/13;
+    }
+
+    #devin{
+        grid-column: 2/3;
+        grid-row: 11/13;
+    }
+
+    #shorts{
+        grid-column: 1/2;
+        grid-row: 12/14;
+        padding-top: 2rem;
+    }
+
+    #subie{
+        grid-column: 2/3;
+        grid-row: 13/14;
+    }
+
+    #band{
+        grid-column: 1/2;
+        grid-row: 14/15;
+        padding-top: 0;
+    }
+
+    #tan_wrx{
+        grid-column: 2/3;
+        grid-row: 14/15;
+    }
+
+
+
+    /* Video */
+    #video_wrapper{
+        background-color: #EDDDD4;
+        padding-bottom: 3rem;
+    }
+
+    #video_main{
+        display: grid;
+        grid-template-rows: repeat(20, auto);
+        grid-template-columns: repeat(2,auto);
+        column-gap: 2rem;
+        margin: 4rem;
+    }
+
+    #video_main h1{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
+        color: #772E25;
+    }
+
+    #video_main h2{
+       grid-row: 2/3;
+        grid-column: 1/4;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
+        color: #772E25; 
+    }
+
+    .project_vid{
+        object-fit: cover;
+        height: 100%;
+        width: 100%; 
+    }
+
+    .project_vid:hover{
+        padding-bottom: 1rem;
+        filter: drop-shadow(8px 8px 10px black);
+        transition: 2s ease;
+    }
+
+
+    #snowfall{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #snowfall .prj_des{
+        font-size: 11pt;
+    }
+
+    #lens{
+        grid-column: 2/3;
+        grid-row: 3/4; 
+    }
+
+    #lens .prj_title{
+        font-size: 14pt;
+    }
+
+    #umg_vid1_26{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #umg_vid1_26 .prj_title{
+        font-size: 12pt;
+    }
+
+    #umg_vid2_26{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+     #tag_day_horz{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
 
 
     /* Digital design */
-    #projects_main a{
+
+    #design_main{
+        display: grid;
+        grid-template-rows: repeat(20, auto);
+        grid-template-columns: repeat(2,auto);
+        column-gap: 2rem;
+        margin: 4rem;
+    }
+
+    #design_main h1{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
+        color: #772E25;
+    }
+
+    #design_wrapper{
+        background-color: #EDDDD4;
+        padding-bottom: 4rem;
+        
+    }
+
+    #design_main a{
         filter: drop-shadow(8px 8px 10px black);
     }
 
-    #projects_main figcaption{
+    #design_main figcaption{
         padding-top: 1rem;
+        font-weight: 100;
     }
 
     #brand_guide{
@@ -539,20 +859,204 @@
         grid-row: 2/4;
     }
 
+
+    #e30_graphic{
+        grid-column: 2/3;
+        grid-row: 4/6;
+    }
+
+    #e30_graphic .prj_title{
+        font-size: 14pt;
+    }
+
+    #new_hire{
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+
+    #name_tag_1{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+
+    #work_ann{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    #name_tag_2{
+        grid-column: 1/2;
+        grid-row:5/6;
+    }
+
+    #wrx_graphic{
+        grid-row: 6/8;
+        grid-column: 1/2;
+    }
+
+    #wrx_graphic .prj_title{
+        font-size: 12pt;
+    }
+
+    #skull_makeup{
+        grid-column: 2/3;
+        grid-row: 6/8;
+    }
+
+    /* Zine */
+    
+    #zine-title{
+        grid-column: 1/3;
+        grid-row: 8/9;
+        color: #197278;
+        text-align: center;
+    }
+
+    #zine_cover{
+        grid-column:1/2;
+        grid-row: 9/11;
+    }
+
+    #zine_pg1{
+        grid-column: 2/3;
+        grid-row: 9/11;
+    }
+
+    #zine_pg2{
+        grid-column: 1/2;
+        grid-row: 11/13;
+    }
+
+    #zine_pg3{
+        grid-column: 2/3;
+        grid-row: 11/13;
+    }
+
+    #zine_pg4{
+        grid-column: 1/2;
+        grid-row: 13/15;
+    }
+
+    #zine_pg5{
+        grid-column: 2/3;
+        grid-row: 13/15;
+    }
+
+    #zine_pg6{
+        grid-column: 1/2;
+        grid-row: 15/17;
+    }
+
+    #zine_back{
+        grid-column: 2/3;
+        grid-row: 15/17;
+    }
+
+    /* contact page */
+
+    #contact_grid{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        background-color: #EDDDD4;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        justify-content: center;    
+    }
+
+    #contact_tag_line{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: #772E25;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #contact_text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+
+    #location1, #location2, #phone{
+        color: #772E25;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        padding: 3rem;
+    }
+        
+
+
+    #contact_right_side{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #contact_text li{
+        list-style: none;
+        padding-left: 3rem;
+        font-weight: 700;
+        line-height: 30%;
+    }
+
+
+    .contact_button{
+        border-radius: 50px;
+        font-size: 20pt;
+        background-color: #C44536;
+        width: 200px;
+        font-family: 'gravitas one';
+        text-align: center;
+        list-style: none;
+        padding: 1rem;
+    }
+
+
+    .contact_button a{
+        text-decoration: none;
+        color: #EDDDD4;
+    }
+
+    .contact_button:visited{
+        color: #EDDDD4;
+        text-decoration: line-through;
+    }
+
+    .contact_button:hover{
+        filter: drop-shadow(8px 8px 10px black);
+        transition: 2s ease;
+    }
+
+
+
+
+
     footer{
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 17px;
         text-align: left;
-        color: #EDDDD4;
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns:  1fr 1fr 1fr;
         width: 100%;
         grid-template-rows: auto auto;
-        background-color: #197278;
+        background-color: #C44536;
+    }
+
+    #footer_left{
+        grid-column: 1/2;
+        justify-content: space-between;
     }
 
     #footer_name{
-        grid-column: 1/2;
         grid-row: 1/2;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -560,13 +1064,19 @@
 
     #footer_h3{
         font-family: 'gravitas one';
-        color: black;
-        grid-column: 1/2;
+        color: #EDDDD4;
         grid-row: 2/3;
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: left;
-        justify-self: baseline;
+    }
+
+    footer h4{
+        color: #EDDDD4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        grid-row: 2/3;
+        padding: 2rem;
     }
 
     #footer_important_links{
@@ -597,24 +1107,27 @@
     }
 
     footer h2{
-        padding-bottom: 0.5rem;   
-    }
-
-    footer :visited{
-        text-decoration: none;
-        color: black;
+        padding-bottom: 0.5rem; 
+        color: black;  
     }
 
     footer a{
         text-decoration: none;
+        font-style: normal;
         margin-left: 0;
+        color:#EDDDD4;
     }
 
+    footer :visited{
+        text-decoration: none;
+        color: #EDDDD4;
+    }
 
     footer ul{
         padding-left: 0;
         margin-left: 0;
         list-style-type: none;
+        line-height: 2em;
     }
 
 
@@ -624,16 +1137,39 @@
 
 
     @media screen and (min-width: 300px) and (max-width: 1050px){
-        #bio, #experience{
+        nav{
+            padding: 3rem;
+            margin-right: 0;
+        }
+
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden; 
+
+        }
+
+
+        #bio_left, #experience_right{
             text-align: center;
             padding-left: 8%;
             padding-right: 8%;
         }
 
-        #home_page_first_half, #home_page_second_half, #about_me_wrapper, #projects_wrapper{
+        #home_page_first_half, #home_page_second_half, #about_me_wrapper, #projects_wrapper, #contact_grid{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        #bio, #bio_image, #experience, #experience_image, #meet_mariana, #about_me_img_one, #marketing_assistant, #about_me_img_two, #about_me_img_three, #freelance   {
+            border-radius: 20px;
+        }
+
+        #bio, #experience, #home_page_about_me, #meet_mariana{
+            padding: 30px;
         }
 
         .home_page_sections{
@@ -646,7 +1182,7 @@
         }
         /* about me */
         #about_me_summary{
-            font-size: 2 rem;
+            font-size: 2rem;
         }
 
         #meet_mariana, #marketing_assistant, #freelance{
@@ -656,16 +1192,28 @@
         #about_me_ma_summary, #about_me_freelance_summary{
             text-align: center;
         }
-        footer{
+
+
+
+
+        /*projects*/
+
+        .prj_title{
+            font-size: 23pt;
+            font-weight: bold;
+        }
+
+        .prj_des{
+            font-size: 19pt;
+        }
+
+        #umg_vid1_26 .prj_title,  #snowfall .prj_des, #lens .prj_title{
+            font-size: 19pt;
+        }
+
+         #photography_main, #video_main, #design_main {
             display: flex;
             flex-direction: column;
-            margin: 0;
-            text-align: center;
-            align-content: center;
-            width:auto;
-            height: auto;
-            padding-left: 1rem;
-            width: 100%;
         }
 
         #footer_socials, #footer_h3, #footer_important_links, #footer_name, #footer_important_links_content, footer address{
@@ -683,6 +1231,33 @@
         .prj_des{
             text-align: right;
         }
+
+
+        #contact_grid, #contact_text{
+            text-align: center;
+            padding: 0;
+        }
+
+
+        /* footer */
+        footer{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            text-align: center;
+            align-content: center;
+            width:auto;
+            height: auto;
+            padding-left: 1rem;
+            width: 100%;
+            font-size: 14pt;
+        }
+
+        footer h4{
+            font-size: 16pt;
+        }
+
+
 
     }
     @media (min-width:1100px){
